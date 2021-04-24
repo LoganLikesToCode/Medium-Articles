@@ -27,10 +27,13 @@ start = time.time()
 sentence = input("Type it now!\n")
 end = time.time()
 
-final_time = end - start
-string_time = str(final_time)
-print(f"Your time is {string_time} seconds!") 
+if sentence == final_words:
+  final_time = end - start
+  string_time = str(final_time)
+  print(f"Your time is {string_time} seconds!") 
 
+if sentence != final_words:
+  print("Sadly, you failed! :(")
 
 
   
